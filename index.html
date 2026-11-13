@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official Portfolio of Sahil Kumar Singh — 18-Year-Old Vibe Coder & AI Builder. Creator of redrmyaio.vercel.app. Harnessing AI to build and deploy live web platforms without traditional coding.">
+  <meta name="keywords" content="Sahil Kumar Singh, Vibe Coder, AI Builder, Prompt Engineering, redrmyaio.vercel.app, Web Creator, AI Powered Development, HDCA, CBSE, Artificial Intelligence">
+  <meta name="author" content="Sahil Kumar Singh">
+  <title>Sahil Kumar Singh — Vibe Coder & AI Builder</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Glass Background Gradients -->
+  <div class="ambient-glow ambient-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-bottom-right" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-center" aria-hidden="true"></div>
+
+  <!-- macOS Frosted Glass Dock / Navigation Bar -->
+  <header class="dock-wrapper">
+    <nav class="glass-dock" id="main-nav" aria-label="Main Navigation">
+      <a href="#hero" class="dock-brand" aria-label="Sahil Kumar Singh Home">
+        <span class="avatar-mini">
+          <img src="me.png" alt="Sahil Kumar Singh thumbnail">
+        </span>
+        <span class="brand-text">Sahil<span class="dot-accent">.</span></span>
+      </a>
+
+      <div class="dock-links">
+        <a href="#about" class="dock-item" data-section="about">
+          <i class="fa-solid fa-user"></i>
+          <span>About</span>
+        </a>
+        <a href="#projects" class="dock-item" data-section="projects">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Projects</span>
+        </a>
+        <a href="#credentials" class="dock-item" data-section="credentials">
+          <i class="fa-solid fa-award"></i>
+          <span>Certificates</span>
+        </a>
+        <a href="#skills" class="dock-item" data-section="skills">
+          <i class="fa-solid fa-code"></i>
+          <span>Skills</span>
+        </a>
+        <a href="#education" class="dock-item" data-section="education">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Education</span>
+        </a>
+        <a href="#contact" class="dock-item" data-section="contact">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+
+      <div class="dock-actions">
+        <button id="theme-toggle" class="dock-action-btn" aria-label="Toggle Theme" title="Toggle macOS Studio Light/Dark">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="#contact" class="dock-cta-btn">Connect</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="status-badge glass-pill">
+            <span class="pulse-indicator"></span>
+            <span>Vibe Coder • Powered by AI • Creator of redrmyaio.vercel.app</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Sahil Kumar Singh</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="static-prefix">I build</span>
+            <span class="typing-text" id="typing-text"></span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            An 18-year-old <strong>Vibe Coder</strong> and AI-first builder (Born 2008). I don't write traditional code syntax by hand—I know how to prompt, steer, and orchestrate AI better than anyone to turn visionary ideas into live, production-ready web apps like <a href="https://redrmyaio.vercel.app" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); text-decoration: underline; text-underline-offset: 3px;">redrmyaio.vercel.app</a>.
+          </p>
+
+          <div class="hero-tags">
+            <span class="tag-pill tag-pill-large-pass"><i class="fa-solid fa-graduation-cap"></i> <strong>Class 10th & 12th Pass (CBSE)</strong></span>
+            <span class="tag-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Vibe Coder</span>
+            <span class="tag-pill"><i class="fa-solid fa-robot"></i> AI Orchestration</span>
+            <span class="tag-pill"><i class="fa-solid fa-rocket"></i> Shipped redrmyaio.vercel.app</span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i class="fa-solid fa-arrow-down-long"></i>
+            </a>
+            <a href="#credentials" class="btn btn-secondary glass-btn">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Official Accreditations</span>
+            </a>
+            <a href="#contact" class="btn btn-tertiary glass-btn">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Glass Hero Card with Portrait (Compact Medium Size) -->
+        <div class="hero-visual">
+          <div class="glass-portrait-card">
+            <div class="mac-window-controls">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="window-title">sahil_vibecoder.profile</span>
+            </div>
+
+            <div class="portrait-wrapper">
+              <img src="me.png" alt="Sahil Kumar Singh" class="portrait-img" id="hero-portrait">
+              <div class="portrait-overlay"></div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-right glass-card">
+              <div class="badge-icon ai-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="badge-text">
+                <strong>Vibe Coder</strong>
+                <span>AI-Powered Creation</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left glass-card">
+              <div class="badge-icon project-icon">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="badge-text">
+                <strong>redrmyaio.vercel.app</strong>
+                <span>Flagship Live Project</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right glass-card">
+              <div class="badge-icon national-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="badge-text">
+                <strong style="font-size: 0.8rem;">Class 10th & 12th Pass</strong>
+                <span>CBSE Board Certified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Philosophy & Superpower</span>
+          <h2 class="section-heading">Driven by AI, Defined by Speed</h2>
+          <p class="section-subheading">I don't memorize programming syntax — I master AI to build, iterate, and deploy real applications at lightning speed.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card about-card highlight-card">
+            <div class="card-icon-header">
+              <div class="icon-bubble"><i class="fa-solid fa-id-card"></i></div>
+              <span class="sub-label">Profile Overview</span>
+            </div>
+            <h3>Sahil Kumar Singh</h3>
+            <p class="lead-text">
+              Born in 2008 and currently 18 years old, I am a proud <strong>Vibe Coder</strong>. I don't know traditional programming languages, but I know how to use AI better than anyone to turn ideas into fully functional web software.
+            </p>
+            <p>
+              My flagship project, <strong><a href="https://redrmyaio.vercel.app" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); text-decoration: underline;">redrmyaio.vercel.app</a></strong>, was conceived, structured, and deployed live to Vercel through pure AI orchestration and prompt engineering. With a strong academic background from CBSE and an official AI Certification, I blend relentless curiosity with high-velocity execution.
+            </p>
+            
+            <div class="stats-row" style="grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));">
+              <div class="stat-box">
+                <span class="stat-number">18</span>
+                <span class="stat-label">Years of Age</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number" style="font-size: 1.25rem;">10th & 12th</span>
+                <span class="stat-label">PASS (CBSE)</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">AI-First</span>
+                <span class="stat-label">Vibe Coder</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">Live</span>
+                <span class="stat-label">redrmyaio.vercel.app</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card about-card">
+            <div class="card-icon-header">
+              <div class="icon-bubble"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <span class="sub-label">Core Philosophy</span>
+            </div>
+            <h3>Why I Vibe Code</h3>
+            <p>
+              The paradigm of software creation has shifted. Today, the most powerful skill is not memorizing syntax or debugging semicolons—it is prompt architecture, system thinking, and knowing how to steer AI models to generate reliable, beautiful production software.
+            </p>
+            <ul class="about-bullet-list">
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>AI Mastery & Prompt Engineering:</strong>
+                  <span>Directing modern LLMs with precise context, structured prompts, and iterative refinement.</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Zero-to-One Production Velocity:</strong>
+                  <span>Going from a blank canvas to a live deployed platform like redrmyaio.vercel.app in record time.</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Creative Visual Polish:</strong>
+                  <span>Pairing AI-generated web interfaces with high-end Apple glassmorphism and multimedia video editing.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED LIVE PROJECTS -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-left">
+            <span class="section-kicker">Built With AI & Deployed</span>
+            <h2 class="section-heading">Featured Live Platforms</h2>
+          </div>
+          <p class="section-subheading">Real-world production applications crafted through vibe coding and AI orchestration, running live on the web.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: Redrmy AIO (FLAGSHIP) -->
+          <div class="project-card glass-card">
+            <div class="mac-window-controls">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="browser-address">
+                <i class="fa-solid fa-lock"></i> redrmyaio.vercel.app
+              </span>
+              <a href="https://redrmyaio.vercel.app" target="_blank" rel="noopener noreferrer" class="external-pill" title="Open live site">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="project-preview-box">
+              <div class="preview-backdrop aio-backdrop">
+                <div class="mockup-header-preview">
+                  <div class="brand-pill"><i class="fa-solid fa-shapes"></i> Redrmy AIO Platform</div>
+                  <span class="live-pill"><span class="pulse-indicator-small"></span> Online • Vercel</span>
+                </div>
+                <div class="mockup-body-preview">
+                  <div class="mockup-card-dummy tool-dummy">
+                    <span class="dummy-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                    <div class="dummy-lines">
+                      <span class="d-line full"></span>
+                      <span class="d-line half"></span>
+                    </div>
+                  </div>
+                  <div class="mockup-card-dummy tool-dummy">
+                    <span class="dummy-icon"><i class="fa-solid fa-globe"></i></span>
+                    <div class="dummy-lines">
+                      <span class="d-line full"></span>
+                      <span class="d-line three-quarter"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-category">Flagship Project • All-in-One Utility Hub</div>
+              <h3 class="project-title">Redrmy AIO (All In One)</h3>
+              <p class="project-desc">
+                My flagship web platform built entirely through vibe coding and AI orchestration. A comprehensive digital suite combining multiple everyday web tools and services into a fast, responsive interface, deployed live on Vercel.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Vibe Coded with AI</span>
+                <span class="tech-tag">Prompt Engineering</span>
+                <span class="tech-tag">Vercel Production</span>
+                <span class="tech-tag">All-In-One Tools</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://redrmyaio.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Visit redrmyaio.vercel.app</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <button class="btn btn-secondary glass-btn btn-sm copy-link-btn" data-url="https://redrmyaio.vercel.app">
+                  <i class="fa-solid fa-copy"></i>
+                  <span>Copy Link</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Riya Medical Store -->
+          <div class="project-card glass-card">
+            <div class="mac-window-controls">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="browser-address">
+                <i class="fa-solid fa-lock"></i> riyamedicalstore.netlify.app
+              </span>
+              <a href="https://riyamedicalstore.netlify.app" target="_blank" rel="noopener noreferrer" class="external-pill" title="Open live site">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="project-preview-box">
+              <div class="preview-backdrop medical-backdrop">
+                <div class="mockup-header-preview">
+                  <div class="brand-pill"><i class="fa-solid fa-prescription-bottle-medical"></i> Riya Medical Store</div>
+                  <span class="live-pill"><span class="pulse-indicator-small"></span> Online</span>
+                </div>
+                <div class="mockup-body-preview">
+                  <div class="mockup-card-dummy">
+                    <span class="dummy-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+                    <div class="dummy-lines">
+                      <span class="d-line full"></span>
+                      <span class="d-line half"></span>
+                    </div>
+                  </div>
+                  <div class="mockup-card-dummy">
+                    <span class="dummy-icon"><i class="fa-solid fa-capsules"></i></span>
+                    <div class="dummy-lines">
+                      <span class="d-line full"></span>
+                      <span class="d-line three-quarter"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-category">Healthcare & Digital Storefront</div>
+              <h3 class="project-title">Riya Medical Store</h3>
+              <p class="project-desc">
+                A digital pharmacy and medical accessibility platform designed to connect local healthcare supplies with community users. Features a responsive, mobile-first design, streamlined catalog browsing, and instant contact workflows.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">AI Assisted</span>
+                <span class="tech-tag">HTML5 & CSS</span>
+                <span class="tech-tag">Netlify Cloud</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://riyamedicalstore.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Visit Site</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <button class="btn btn-secondary glass-btn btn-sm copy-link-btn" data-url="https://riyamedicalstore.netlify.app">
+                  <i class="fa-solid fa-copy"></i>
+                  <span>Copy</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- VERIFIED CERTIFICATIONS & ACCREDITATIONS -->
+    <section id="credentials" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Official Credentials</span>
+          <h2 class="section-heading">Verified Accreditations & Honors</h2>
+          <p class="section-subheading">Nationally accredited certifications issued by government bodies and academic boards. Click any certificate to inspect full resolution.</p>
+        </div>
+
+        <div class="certifications-grid">
+          
+          <!-- CERTIFICATE 1: Skill India & CBSE Artificial Intelligence -->
+          <div class="cert-card glass-card">
+            <div class="cert-header">
+              <div class="cert-issuing">
+                <span class="cert-badge-pill"><i class="fa-solid fa-shield-check"></i> Government Accredited</span>
+                <span class="cert-date">October 14, 2023</span>
+              </div>
+              <h3 class="cert-title">Artificial Intelligence (Module A)</h3>
+              <div class="cert-org">
+                <i class="fa-solid fa-landmark"></i> CBSE & Skill India
+              </div>
+            </div>
+
+            <div class="cert-image-preview" onclick="openCertModal('certificate2.jpg', 'Artificial Intelligence (Module A) - CBSE & Skill India', 'Registration No: SH234187200164 | Issued by Dr. Biswajit Saha, Director (Skill Education), CBSE New Delhi')">
+              <img src="certificate2.jpg" alt="CBSE Skill India Artificial Intelligence Certificate - Sahil Kumar Singh" loading="lazy">
+              <div class="zoom-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Click to Inspect High-Res</span>
+              </div>
+            </div>
+
+            <div class="cert-details">
+              <div class="cert-meta-item">
+                <span class="meta-label">Awardee</span>
+                <span class="meta-val">Sahil Kumar Singh</span>
+              </div>
+              <div class="cert-meta-item">
+                <span class="meta-label">Registration No</span>
+                <span class="meta-val code-font">SH234187200164</span>
+              </div>
+              <div class="cert-meta-item">
+                <span class="meta-label">School</span>
+                <span class="meta-val">Gurukul Takshshila</span>
+              </div>
+              <div class="cert-meta-item">
+                <span class="meta-label">Issuing Authority</span>
+                <span class="meta-val">Dr. Biswajit Saha, Director (Skill Education), CBSE</span>
+              </div>
+            </div>
+
+            <div class="cert-footer">
+              <button class="btn btn-secondary glass-btn btn-full" onclick="openCertModal('certificate2.jpg', 'Artificial Intelligence (Module A) - CBSE & Skill India', 'Registration No: SH234187200164 | Issued by Dr. Biswajit Saha, Director (Skill Education), CBSE New Delhi')">
+                <i class="fa-solid fa-expand"></i>
+                <span>View Full Certificate</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- CERTIFICATE 2: Vidyarthi Vigyan Manthan (VVM) -->
+          <div class="cert-card glass-card">
+            <div class="cert-header">
+              <div class="cert-issuing">
+                <span class="cert-badge-pill national-badge"><i class="fa-solid fa-star"></i> National Talent Search</span>
+                <span class="cert-date">2022–2023</span>
+              </div>
+              <h3 class="cert-title">Vidyarthi Vigyan Manthan 2022</h3>
+              <div class="cert-org">
+                <i class="fa-solid fa-atom"></i> VIBHA, Vigyan Prasar (DST, Govt. of India) & NCERT
+              </div>
+            </div>
+
+            <div class="cert-image-preview" onclick="openCertModal('certificate1.jpg', 'Vidyarthi Vigyan Manthan (VVM 2022-23) - National Science Search', 'Organized by VIBHA in association with Vigyan Prasar (Dept. of Science & Technology, Govt. of India) & NCERT')">
+              <img src="certificate1.jpg" alt="Vidyarthi Vigyan Manthan National Science Certificate - Sahil" loading="lazy">
+              <div class="zoom-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Click to Inspect High-Res</span>
+              </div>
+            </div>
+
+            <div class="cert-details">
+              <div class="cert-meta-item">
+                <span class="meta-label">Honor</span>
+                <span class="meta-val">National Level Online Examination</span>
+              </div>
+              <div class="cert-meta-item">
+                <span class="meta-label">Program</span>
+                <span class="meta-val">Science Talent Search for New India Using Digital Devices</span>
+              </div>
+              <div class="cert-meta-item">
+                <span class="meta-label">Awardee</span>
+                <span class="meta-val">Sahil (Gurukul Takshshila)</span>
+              </div>
+              <div class="cert-meta-item">
+                <span class="meta-label">Authority</span>
+                <span class="meta-val">Dept. of Science & Technology (Govt. of India) & NCERT</span>
+              </div>
+            </div>
+
+            <div class="cert-footer">
+              <button class="btn btn-secondary glass-btn btn-full" onclick="openCertModal('certificate1.jpg', 'Vidyarthi Vigyan Manthan (VVM 2022-23) - National Science Search', 'Organized by VIBHA in association with Vigyan Prasar (Dept. of Science & Technology, Govt. of India) & NCERT')">
+                <i class="fa-solid fa-expand"></i>
+                <span>View Full Certificate</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Capabilities & AI Superpowers</span>
+          <h2 class="section-heading">Core Skills & Vibe Coding Arsenal</h2>
+          <p class="section-subheading">I don't memorize manual coding syntax — I master AI orchestration, prompt engineering, and modern web deployment.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Vibe Coding & AI Orchestration -->
+          <div class="skill-category-card glass-card highlight-glow">
+            <div class="category-header">
+              <div class="category-icon ai-glow"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <div>
+                <h3>Vibe Coding & AI Prompting</h3>
+                <span class="category-sub">Primary Superpower & Core Strength</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              Mastering prompt engineering, context window steering, agentic workflows, and directing AI models to generate bug-free, functional production applications.
+            </p>
+            <div class="skill-chips">
+              <span class="skill-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> Vibe Coding</span>
+              <span class="skill-chip"><i class="fa-solid fa-robot"></i> Prompt Engineering</span>
+              <span class="skill-chip"><i class="fa-solid fa-microchip"></i> CBSE AI Certified</span>
+              <span class="skill-chip"><i class="fa-solid fa-arrows-spin"></i> Iterative AI Debugging</span>
+            </div>
+          </div>
+
+          <!-- Category 2: AI-Powered Web Development -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon web-glow"><i class="fa-solid fa-laptop-code"></i></div>
+              <div>
+                <h3>AI-Driven Web Development</h3>
+                <span class="category-sub">Production Web Interface Crafting</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              Directing AI to produce clean HTML5 structure, responsive CSS3 styling, and client-side JavaScript logic to build intuitive, mobile-friendly websites.
+            </p>
+            <div class="skill-chips">
+              <span class="skill-chip"><i class="fa-brands fa-html5"></i> Semantic HTML5</span>
+              <span class="skill-chip"><i class="fa-brands fa-css3-alt"></i> Modern CSS & Glassmorphism</span>
+              <span class="skill-chip"><i class="fa-brands fa-js"></i> Interactive JS Logic</span>
+              <span class="skill-chip"><i class="fa-solid fa-mobile-screen"></i> Mobile-First UI</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Cloud Deployment & Shipping -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon fast-glow"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+              <div>
+                <h3>Cloud Deployment & Shipping</h3>
+                <span class="category-sub">Vercel & Netlify Production</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              Fast zero-to-one deployment pipelines. Connecting custom domains, managing Git repositories, and shipping live web platforms like redrmyaio.vercel.app with near-instant speed.
+            </p>
+            <div class="skill-chips">
+              <span class="skill-chip"><i class="fa-solid fa-rocket"></i> Vercel (redrmyaio)</span>
+              <span class="skill-chip"><i class="fa-solid fa-cloud"></i> Netlify Cloud</span>
+              <span class="skill-chip"><i class="fa-solid fa-globe"></i> Live URL Publishing</span>
+              <span class="skill-chip"><i class="fa-solid fa-bolt"></i> High-Speed Shipping</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Creative Multimedia & Video Production -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon media-glow"><i class="fa-solid fa-film"></i></div>
+              <div>
+                <h3>Video Editing & Media</h3>
+                <span class="category-sub">Visual Storytelling & Production</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              Proficient in high-retention video editing, pacing, visual effects, and digital storytelling to create impactful video content.
+            </p>
+            <div class="skill-chips">
+              <span class="skill-chip"><i class="fa-solid fa-video"></i> Video Editing</span>
+              <span class="skill-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> Visual Effects</span>
+              <span class="skill-chip"><i class="fa-solid fa-music"></i> Audio Sync</span>
+              <span class="skill-chip"><i class="fa-solid fa-palette"></i> Color Grading</span>
+            </div>
+          </div>
+
+          <!-- Category 5: HDCA - Honours Diploma in Computer Application (Pursuing) -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon hdca-glow"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h3>HDCA Diploma</h3>
+                <span class="category-sub">Honours Diploma in Computer Application</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              Currently pursuing an intensive Honours Diploma in Computer Application, mastering software tools, data fundamentals, and core computer science concepts.
+            </p>
+            <div class="skill-chips">
+              <span class="skill-chip status-pursuing"><i class="fa-solid fa-hourglass-half"></i> Pursuing</span>
+              <span class="skill-chip"><i class="fa-solid fa-award"></i> HDCA Honors</span>
+              <span class="skill-chip"><i class="fa-solid fa-laptop-code"></i> Computer Applications</span>
+              <span class="skill-chip"><i class="fa-solid fa-database"></i> IT & Software Fundamentals</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Cognitive Velocity & Superpowers -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon code-glow"><i class="fa-solid fa-bolt-lightning"></i></div>
+              <div>
+                <h3>Fast Learner & AI Explorer</h3>
+                <span class="category-sub">Cognitive Adaptability & Execution</span>
+              </div>
+            </div>
+            <p class="skill-category-desc">
+              An insatiable appetite for learning and self-directed problem-solving. Able to adopt new AI models, developer workflows, and frameworks in record time.
+            </p>
+            <div class="skill-chips">
+              <span class="skill-chip"><i class="fa-solid fa-gauge-high"></i> Rapid Tech Adoption</span>
+              <span class="skill-chip"><i class="fa-solid fa-magnifying-glass"></i> AI Problem Solving</span>
+              <span class="skill-chip"><i class="fa-solid fa-book-open"></i> Continuous Learning</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & ACADEMIC BACKGROUND -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Academic Journey</span>
+          <h2 class="section-heading">Education & Foundational Training</h2>
+          <p class="section-subheading">Scholastic achievements and ongoing professional diploma training.</p>
+        </div>
+
+        <!-- Highlight Callout Banner for Class 10th & 12th Pass -->
+        <div class="education-highlight-callout glass-card">
+          <div class="callout-text">
+            <h3>🎓 <span>CLASS 10th & 12th PASS</span> — Central Board of Secondary Education (CBSE)</h3>
+            <p>Successfully passed Class 10th and Class 12th national examinations under CBSE with strong foundations in science, mathematics, and technology.</p>
+          </div>
+          <div class="callout-badge">
+            <i class="fa-solid fa-circle-check"></i> CBSE 10th & 12th PASS
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Item 1: HDCA Diploma (Pursuing) -->
+          <div class="timeline-card glass-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-badge badge-active">Currently Pursuing</div>
+            <div class="timeline-date">Honours Diploma in Computer Application (HDCA)</div>
+            <h3 class="timeline-title">Honours Diploma in Computer Application (HDCA)</h3>
+            <p class="timeline-institution">Advanced Computing & Information Systems</p>
+            <p class="timeline-desc">
+              Currently pursuing a specialized professional Honours Diploma in Computer Application, covering software programming, data structures, computer fundamentals, and modern IT applications.
+            </p>
+            <div class="timeline-tags">
+              <span>HDCA</span>
+              <span>Pursuing</span>
+              <span>Computer Applications</span>
+              <span>Software Systems</span>
+            </div>
+          </div>
+
+          <!-- Item 2: 12th Senior Secondary -->
+          <div class="timeline-card glass-card highlight-pass-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-badge badge-pass-success"><i class="fa-solid fa-circle-check"></i> Verified CBSE Pass</div>
+            <div class="pass-hero-banner">CLASS 12th PASS (CBSE)</div>
+            <h3 class="timeline-title">Senior Secondary Examination (Class 12th)</h3>
+            <p class="timeline-institution">Central Board of Secondary Education (CBSE) • Science & Technology Focus</p>
+            <p class="timeline-desc">
+              Successfully completed and passed Class 12th board education with rigorous training in analytical problem solving, physics, mathematics, and computer sciences under India's premier national board curriculum.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag-highlight-pass"><i class="fa-solid fa-graduation-cap"></i> 12th Pass Certified</span>
+              <span>CBSE Board</span>
+              <span>Analytical Foundations</span>
+              <span>Science & Tech</span>
+            </div>
+          </div>
+
+          <!-- Item 3: 10th Secondary -->
+          <div class="timeline-card glass-card highlight-pass-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-badge badge-pass-success"><i class="fa-solid fa-circle-check"></i> Verified CBSE Pass</div>
+            <div class="pass-hero-banner">CLASS 10th PASS (CBSE)</div>
+            <h3 class="timeline-title">Secondary School Examination (Class 10th)</h3>
+            <p class="timeline-institution">Gurukul Takshshila, Fatehpur Pundri • CBSE Board</p>
+            <p class="timeline-desc">
+              Passed Class 10th board examination with distinction, nurtured in a Gurukul environment promoting extreme focus, discipline, and intellectual rigor. Active participant in national science competitions and talent examinations.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag-highlight-pass"><i class="fa-solid fa-graduation-cap"></i> 10th Pass Certified</span>
+              <span>CBSE Board</span>
+              <span>Gurukul Discipline</span>
+              <span>VVM Talent Search</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CONNECT -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Get In Touch</span>
+          <h2 class="section-heading">Let's Build Something Exceptional</h2>
+          <p class="section-subheading">Open for tech opportunities, AI projects, freelance collaborations, or innovative discussions.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Glass Card (No Text Overflow, Badarpur Delhi Address) -->
+          <div class="glass-card contact-info-card">
+            <div class="mac-window-controls">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="window-title">contact_info.vcf</span>
+            </div>
+
+            <div class="contact-card-inner">
+              <div class="avatar-contact">
+                <img src="me.png" alt="Sahil Kumar Singh">
+                <div class="online-dot" title="Available now"></div>
+              </div>
+
+              <h3>Sahil Kumar Singh</h3>
+              <p class="contact-role">Vibe Coder & AI Builder</p>
+              <p class="contact-bio">18-year-old vibe coder who builds and deploys live web applications with AI. Creator of redrmyaio.vercel.app.</p>
+
+              <div class="contact-channel-list">
+
+                <!-- Email -->
+                <div class="channel-item">
+                  <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="channel-content">
+                    <span class="channel-title">Email</span>
+                    <a href="mailto:sahilrajpta.n69@gmail.com" class="channel-value">sahilrajpta.n69@gmail.com</a>
+                  </div>
+                  <div class="channel-actions-group">
+                    <button class="channel-action copy-email-btn" data-email="sahilrajpta.n69@gmail.com" title="Copy Email">
+                      <i class="fa-solid fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Address: Delhi, Badarpur -->
+                <div class="channel-item">
+                  <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="channel-content">
+                    <span class="channel-title">Address</span>
+                    <span class="channel-value">Delhi, Badarpur, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quick-mail-action">
+                <a href="mailto:sahilrajpta.n69@gmail.com?subject=Portfolio%20Inquiry%20-%20Sahil%20Kumar%20Singh" class="btn btn-primary btn-full">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Send Direct Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="glass-card contact-form-card">
+            <div class="mac-window-controls">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="window-title">compose_message.sh</span>
+            </div>
+
+            <form id="portfolio-contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="sender-name">Your Name</label>
+                <div class="input-wrapper glass-input">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="sender-name" name="name" placeholder="John Doe" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email">Your Email Address</label>
+                <div class="input-wrapper glass-input">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="sender-email" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message-subject">Subject</label>
+                <div class="input-wrapper glass-input">
+                  <i class="fa-solid fa-pen-nib"></i>
+                  <input type="text" id="message-subject" name="subject" placeholder="Project / Collaboration / Opportunity" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message-body">Message</label>
+                <div class="input-wrapper glass-input textarea-wrapper">
+                  <textarea id="message-body" name="message" rows="4" placeholder="Hello Sahil, I would like to connect regarding..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <span>Dispatch Message</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="portfolio-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">Sahil Kumar Singh</span>
+        <span class="footer-tagline">18-Year-Old Vibe Coder • Creator of redrmyaio.vercel.app • Crafted with Apple macOS Glass Aesthetics</span>
+      </div>
+
+      <div class="footer-center">
+        <div class="status-pill glass-pill-sm">
+          <span class="pulse-indicator"></span>
+          <span>Age 18 (2008) • CBSE & AI Certified • Vibe Coder</span>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="Scroll back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE CERTIFICATE LIGHTBOX MODAL -->
+  <div id="cert-modal" class="cert-modal-backdrop" aria-hidden="true" role="dialog" aria-label="Certificate Inspector">
+    <div class="cert-modal-window glass-card">
+      <div class="mac-window-controls">
+        <button class="dot dot-red" onclick="closeCertModal()" title="Close viewer"></button>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="window-title" id="cert-modal-header">Certificate Inspector</span>
+        <button class="modal-close-cross" onclick="closeCertModal()" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-image-container">
+        <img id="cert-modal-img" src="" alt="Full Resolution Certificate">
+      </div>
+
+      <div class="modal-footer-bar">
+        <div class="modal-meta-info">
+          <h4 id="cert-modal-title">Certificate Title</h4>
+          <p id="cert-modal-subtitle">Certificate Metadata</p>
+        </div>
+        <div class="modal-buttons">
+          <a id="cert-download-link" href="" download class="btn btn-secondary glass-btn btn-sm">
+            <i class="fa-solid fa-download"></i>
+            <span>Download High-Res</span>
+          </a>
+          <button class="btn btn-primary btn-sm" onclick="closeCertModal()">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="glass-toast" role="alert" aria-live="polite">
+    <i class="fa-solid fa-check-circle" id="toast-icon"></i>
+    <span id="toast-text">Action completed successfully</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
